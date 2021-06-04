@@ -1,0 +1,26 @@
+{
+  "name": "404",
+  "version": "1.0.0",
+  "description": "A quick 404 response",
+  "main": "index.js",
+  "scripts": {
+    "build": "TAILWIND_MODE=build NODE_ENV=production postcss ./src/tailwind.css -o ./dist/tailwind.css",
+    "develop": "TAILWIND_MODE=watch NODE_ENV=development postcss ./src/tailwind.css -o ./dist/tailwind.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/recycledbeans/404.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/recycledbeans/404/issues"
+  },
+  "homepage": "https://github.com/recycledbeans/404#readme",
+  "dependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^2.1.4"
+  }
+}
